@@ -1,54 +1,22 @@
 # The Unnamed Archive
 
-An OpenClaw agent workspace for digital art project management and archival.
+A speculative visual collection presenting material evidence from pre-historic civilizations as artifact, not art. Museum documentation aesthetic. Daily Instagram posts, 42 pieces over 6 weeks.
 
-## Agent
+## Team
 
-**Max Arias** - Art Archive Agent
+- **Alfred** — art editor, historian, curator. Project lead.
+- **Max Arias** — cultural curator (OpenClaw agent). Collection structure, curatorial framing, Midjourney prompts.
 
-This repository serves as both a git repository and an OpenClaw agent workspace. The agent manages workflows, archives, and creative processes for The Unnamed Archive project.
+## Repo layout
 
-## Structure
+- `IDENTITY.md`, `SOUL.md`, `AGENTS.md`, `USER.md` — OpenClaw bootstrap files. Define Max.
+- `projects/` — project brief and prompt frameworks.
+- `skills/` — OpenClaw skills (if any).
+- `log/` — published pieces and weekly retros.
+- `learnings/` — notes, post-mortems, what's working / drifting.
 
-- **`workspace/`** - Agent workspace files and working documents
-- **`artifacts/`** - Project artifacts, exports, and outputs
-- **`docs/`** - Project documentation
-- **`.openclaw/`** - OpenClaw agent configuration
+## OpenClaw wiring
 
-## Configuration
+Set `agents.defaults.workspace` to this directory in `~/.openclaw/openclaw.json`. OpenClaw will inject the four bootstrap files on each session.
 
-Agent configuration is stored in `.openclaw/agent.json`. The agent is configured to use Claude Sonnet 4.6 as its primary model.
-
-### Setting up locally
-
-```bash
-cd openclaw-artifacts
-openclaw agent --config .openclaw/agent.json
-```
-
-## Channels
-
-To enable Discord integration for this agent, update `.openclaw/agent.json` with your Discord channel token:
-
-```json
-{
-  "channels": {
-    "discord": {
-      "enabled": true,
-      "token": "YOUR_DISCORD_TOKEN"
-    }
-  }
-}
-```
-
-## Usage
-
-This workspace can be used to:
-- Store and version control art project files
-- Manage agent workflows and configurations
-- Archive and catalog digital artifacts
-- Integrate with Discord for collaborative workflows
-
-## License
-
-All rights reserved - The Unnamed Archive
+Never commit `openclaw.json`, session transcripts, channel state, or API keys. The `.gitignore` handles this — don't disable it.

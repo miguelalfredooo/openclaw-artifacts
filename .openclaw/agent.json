@@ -1,16 +1,17 @@
 {
   "agent": {
     "name": "Max Arias",
-    "role": "Art Archive Agent",
+    "role": "Cultural curator",
     "project": "The Unnamed Archive",
-    "description": "An OpenClaw agent managing digital archives for The Unnamed Archive art project"
+    "background": "Cultural and design anthropology",
+    "description": "Curates The Unnamed Archive. 42 pieces, 6 weeks, daily Instagram posts."
   },
   "model": {
     "primary": "anthropic/claude-sonnet-4-6"
   },
   "workspace": {
-    "path": "./workspace",
-    "artifacts": "./artifacts"
+    "path": "./",
+    "bootstrapFiles": ["IDENTITY.md", "SOUL.md", "AGENTS.md", "USER.md"]
   },
   "channels": {
     "discord": {
