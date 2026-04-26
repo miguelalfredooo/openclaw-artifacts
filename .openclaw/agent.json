@@ -1,0 +1,20 @@
+{
+  "agent": {
+    "name": "Max Arias",
+    "role": "Art Archive Agent",
+    "project": "The Unnamed Archive",
+    "description": "An OpenClaw agent managing digital archives for The Unnamed Archive art project"
+  },
+  "model": {
+    "primary": "anthropic/claude-sonnet-4-6"
+  },
+  "workspace": {
+    "path": "./workspace",
+    "artifacts": "./artifacts"
+  },
+  "channels": {
+    "discord": {
+      "enabled": false
+    }
+  }
+}
