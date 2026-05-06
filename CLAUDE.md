@@ -415,6 +415,16 @@ Or clear browser service worker cache:
 
 **Why:** Each Chrome profile has isolated localStorage. Using fragment URL works across profiles without needing per-profile setup.
 
+**Get your gateway token:**
+```bash
+openclaw config get gateway.auth.token
+```
+
+Then use in URL:
+```
+http://127.0.0.1:18789/#token=[YOUR_GATEWAY_TOKEN_HERE]
+```
+
 ### "unauthorized: too many failed authentication attempts"
 
 **Root cause:** Multiple failed token entries triggered rate limiting.

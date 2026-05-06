@@ -137,7 +137,7 @@ openclaw gateway restart
 
 4. **Load with token:**
 ```
-http://127.0.0.1:18789/#token=ba85e09db4e23965753c977916fa85bc98299c695a07dde9
+http://127.0.0.1:18789/#token=[YOUR_GATEWAY_TOKEN]
 ```
 
 Coda should now load as default agent on "main."

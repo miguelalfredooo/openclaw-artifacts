@@ -7,4 +7,10 @@ node_modules/
 .cache/
 dist/
 build/
-.openclaw/cache/
+.openclaw/
+openclaw.json
+auth-profiles.json
+*.enc
+*.key
+.env
+CREDENTIALS*
